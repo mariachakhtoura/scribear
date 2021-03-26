@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Editor } from '@tinymce/tinymce-react';
+import { toast } from 'react-toastify';
 
 const CustomTextarea = ({
   addContact,
@@ -10,6 +11,10 @@ const CustomTextarea = ({
   contact,
 }) => {
   let editorRef;
+
+  // useEffect(() => {
+
+  // }, []);
 
   useEffect(() => {
     if (changeTimestamp > 0) {
@@ -47,7 +52,7 @@ const CustomTextarea = ({
       apiKey="9wnewx9v94f2f7urdph47eiha8efw7pl7y1ey7a7kporeipx"
       init={{
         height: 560,
-        menubar: true,
+        menubar: 'file edit custom view insert format tools table help',
         menu: {
           file: {
             title: 'File',
@@ -79,6 +84,10 @@ const CustomTextarea = ({
           table: {
             title: 'Table',
             items: 'inserttable | cell row column | tableprops deletetable',
+          },
+          custom: {
+            title: 'Save',
+            items: 'saveBrowserStorage clearBrowserStorage',
           },
           help: { title: 'Help', items: 'help' },
         },
@@ -144,6 +153,31 @@ const CustomTextarea = ({
             fetch: function (callback) {
               callback(items);
             },
+          });
+
+          editor.ui.registry.addMenuItem('saveBrowserStorage', {
+            text: 'Save to local browser storage',
+            onAction: function () {
+              sessionStorage.setItem('Text', editor.getContent());
+              toast.info(
+                'Saved! Your text will be erased automatically after the browser session is closed.'
+              );
+            },
+          });
+
+          editor.ui.registry.addMenuItem('clearBrowserStorage', {
+            text: 'Clear local browser storage',
+            onAction: function () {
+              sessionStorage.setItem('Text', '');
+              toast.success('Browser session cleared.');
+            },
+          });
+
+          editor.on('init', function (e) {
+            const text = sessionStorage.getItem('Text');
+            if (text) {
+              editor.execCommand('mceInsertContent', false, text);
+            }
           });
         },
         // skin: 'oxide-dark',

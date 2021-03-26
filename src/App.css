@@ -112,8 +112,26 @@ hr {
   grid-gap: 10px;
   grid-template-columns: auto auto;
   align-items: baseline;
+  font-family: 'OpenSans-Light' !important;
 }
 
+.Toastify__toast-body {
+  font-family: 'OpenSans-Light' !important;
+}
+
+.Toastify__toast--info {
+  background: #E890A0 !important;
+  color: #fff;
+}
+
+.Toastify__toast--success {
+  background: #5FBFBA !important;
+  color: #fff;
+}
+
+.Toastify__toast {
+  min-height: 45px !important;
+}
 
 /* ================
     header

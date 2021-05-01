@@ -5,22 +5,27 @@
 @font-face {
   font-family: OpenSans-Regular;
   src: url(./fonts/OpenSans-Regular.ttf) format('truetype');
+  font-display: fallback;
 }
 @font-face {
   font-family: OpenSans-Bold;
   src: url(./fonts/OpenSans-Bold.ttf) format('truetype');
+  font-display: fallback;
 }
 @font-face {
   font-family: OpenSans-Italic;
   src: url(./fonts/OpenSans-Italic.ttf) format('truetype');
+  font-display: fallback;
 }
 @font-face {
   font-family: OpenSans-Light;
   src: url(./fonts/OpenSans-Light.ttf) format('truetype');
+  font-display: fallback;
 }
 @font-face {
   font-family: OpenSans-Semibold;
   src: url(./fonts/OpenSans-Semibold.ttf) format('truetype');
+  font-display: fallback;
 }
 
 
@@ -152,14 +157,16 @@ header {
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
 }
 
 .header-background-wrapper {
-  padding-top: max(200px, 45%);
+  padding-top: max(200px, 41%);
   color: #000;
-  background-size: 100%;
+  background-size: 45%;
   background-repeat: no-repeat;
-  background-position: center 25%;
+  background-position: center 90%;
+  position: relative;
 }
 
 .header-container {
@@ -241,11 +248,13 @@ nav a:focus {
     font-size: 1.5rem;
   }
   .header-background-wrapper {
-    padding-top: max(31em, 37%);
-    height: 100vh;
+    padding-top: max(200px, 38%);
   }
   header {
-    margin-top: 1em;
+    top: 1em;
+  }
+  .header-wrapper {
+    min-height: 100vh;
   }
 }
 
@@ -513,7 +522,7 @@ footer {
 }
 
 #keyboard-shortcuts {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -1355,5 +1364,37 @@ footer {
 @media (min-width: 65rem) {
   .timer-box-container {
     margin-top: 20px;
+  }
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 160px);
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 160px solid #97d1c2;
+  border-color: #97d1c2 transparent #97d1c2 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
   }
 }

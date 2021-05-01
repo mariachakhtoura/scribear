@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoadBackground from './LazyLoadBackground';
 
 const HeaderPage = () => {
   return (
@@ -15,13 +16,11 @@ const HeaderPage = () => {
           </ul>
         </nav>
       </header>
-      <section
-        id="home"
-        className="header-background-wrapper"
-        style={{
-          backgroundImage: 'url(bg.png)',
-        }}
-      >
+      <section className="header-wrapper" id="home">
+        <LazyLoadBackground
+          className="header-background-wrapper"
+          source="bg.png"
+        />
         <div className="header-container">
           <h1>Making Transcription More Bearable</h1>
           <a href="#transcribe">Start Transcribing Now</a>

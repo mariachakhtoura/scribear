@@ -140,13 +140,13 @@ const TimerBox = () => {
           <div className="timer-buttons">
             <button onClick={onStop}>
               <figure>
-                <img src="./stop-button.jpg" alt="stop icon" />
+                <img src="./stop-button.png" alt="stop icon" />
               </figure>
             </button>
             {showPause && (
               <button onClick={onPause}>
                 <figure>
-                  <img src="./pause-button.jpg" alt="pause icon" />
+                  <img src="./pause-button.png" alt="pause icon" />
                 </figure>
               </button>
             )}

@@ -66,7 +66,7 @@ const AboutUsPage = () => {
         <div className="keyboard-shortcuts-circle-container">
           <img
             className="keyboard-shortcuts-bear-img"
-            src="./bear33.png"
+            src="./bear.png"
             alt="keyboard image"
           />
           <div className="keyboard-shortcuts-circle">

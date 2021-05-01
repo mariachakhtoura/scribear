@@ -74,7 +74,10 @@ article {
 }
 
 h2 {
-  margin: 5px 0 0 0;
+  color: #747171;
+  margin: 0;
+  font-size: 1.175rem;
+  text-align: left;
 }
 
 h4 {
@@ -86,12 +89,6 @@ li {
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-h3 {
-  color: #747171;
-  margin: 0;
-  text-align: left;
 }
 
 hr {
@@ -171,7 +168,7 @@ header {
 }
 
 .header-container > h1 {
-  font-family: Andalus;
+  font-family: Andalus, Calibri;
   font-size: 1.25rem;
   margin-top: 0;
   max-width: 80%;
@@ -212,7 +209,7 @@ nav li {
 
 nav a {
   font-size: 1rem;
-  font-family: 'bauhaus 93';
+  font-family: 'bauhaus 93', Calibri;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
@@ -303,7 +300,7 @@ footer {
 }
 
 .gmail {
-  width: 20px;
+  width: 22px;
   height: 20px;
 }
 
@@ -427,7 +424,7 @@ footer {
 .about-page > section h1 {
   font-size: 1.5rem;
   margin: 1.25em 0 0.625em 0;
-  font-family: OpenSans-Semibold;
+  font-family: OpenSans-Semibold, Calibri;
 }
 
 .about-page > section:first-of-type h1 {
@@ -447,7 +444,7 @@ footer {
 }
 
 .about-page > section article > strong {
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans-Light', Calibri;
 }
 
 .about_us_figure {
@@ -461,7 +458,7 @@ footer {
 }
 
 .about_us_paragraph {
-  font-family: fangsong;
+  font-family: fangsong, Calibri;
   font-size: 1rem;
 }
 
@@ -502,12 +499,12 @@ footer {
 
 .keyboard-shortcuts-circle li {
   font-size: 1.25rem;
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans-Light', Calibri;
 }
 
 .keyboard-shortcuts-circle li span {
   margin-left: 1.25em;
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', Calibri;
 }
 
 .keyboard-shortcuts-circle-container {
@@ -546,7 +543,7 @@ footer {
   color: #000;
   text-align: left;
   font-size: 1.188rem;
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans-Light', Calibri;
 }
 
 .keyboard-shortcut img {
@@ -670,7 +667,7 @@ footer {
 
 .media-container > h1 {
   font-size: 1.5rem;
-  font-family: 'OpenSans-Semibold';
+  font-family: 'OpenSans-Semibold', Calibri;
   margin: 0.35em 0;
 }
 
@@ -712,6 +709,7 @@ footer {
 
 .file-type-tab > img {
   width: 25px;
+  height: 25px;
   margin: 0px 0.35em;
 }
 
@@ -755,7 +753,7 @@ footer {
 
 .drag-and-drop-box-uploading {
   margin: 0;
-  font-family: 'OpenSans-Italic';
+  font-family: 'OpenSans-Italic', Calibri;
 }
 
 .drag-and-drop-box > img {
@@ -1225,7 +1223,7 @@ footer {
 
 .input-description {
   font-size: 0.688rem;
-  color: #c4c4c4;
+  color: hsl(0, 0%, 50%);
   text-align: left;
 }
 
@@ -1233,7 +1231,7 @@ footer {
   text-align: center;
   padding-top: 1.875em;
   min-height: 45px;
-  color:#8a8888;
+  color:hsl(0, 1%, 55%);
   font-style: italic;
 }
 

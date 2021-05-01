@@ -106,7 +106,7 @@ const DragAndDropFile = ({
               onChange={handleChange}
             />
             <label htmlFor="file">
-              <h5
+              <p
                 className="drag-and-drop-label"
                 style={{
                   margin: minimize ? '0 0 0.735em 0' : '1.67em 0',
@@ -114,7 +114,7 @@ const DragAndDropFile = ({
               >
                 <strong>Choose a file</strong>
                 <span> or drag it here</span>.
-              </h5>
+              </p>
             </label>
             {file && <p className="drag-and-drop-file">{file.name}</p>}
           </>

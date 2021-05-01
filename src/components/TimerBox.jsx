@@ -113,7 +113,7 @@ const TimerBox = () => {
   return (
     <div>
       <div className="timer-box-container">
-        <h3>Timer - Logs</h3>
+        <h2>Timer - Logs</h2>
         {logs.length > 0 && (
           <a
             className="timer-box-export"

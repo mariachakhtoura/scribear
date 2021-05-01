@@ -37,7 +37,7 @@ const ContactsBox = ({ onContactsChange, onContactClick }) => {
   return (
     <div>
       <div className="contacts-box-container">
-        <h3>Participants</h3>
+        <h2>Participants</h2>
         <div className="contacts-box-input-container">
           <div className="contacts-box-input">
             <input

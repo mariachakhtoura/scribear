@@ -105,7 +105,7 @@ const CustomTextarea = ({
         fontsize_formats: '8pt 10pt 12pt 14pt 16pt 18pt 24pt 36pt 48pt',
         font_formats:
           'Arial=arial,helvetica,sans-serif; Courier New=courier new,courier,monospace; AkrutiKndPadmini=Akpdmi-n',
-        export_cors_hosts: ['https://oyamli.azurewebsites.net/'],
+        export_cors_hosts: ['https://scribear.vercel.app/'],
         export_ignore_elements: ['iframe', 'video', 'audio'],
         quickbars_insert_toolbar: '',
         setup: function (editor) {

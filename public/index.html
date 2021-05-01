@@ -2,20 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicons/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="512x512"  href="%PUBLIC_URL%/favicons/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="%PUBLIC_URL%/favicons/favicons/android-chrome-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicons/favicon-32x32.png">
+    <link rel="preload" href="./src/App.css" as="style">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="%PUBLIC_URL%/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="%PUBLIC_URL%/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="%PUBLIC_URL%/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="%PUBLIC_URL%/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="%PUBLIC_URL%/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="%PUBLIC_URL%/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="%PUBLIC_URL%/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="%PUBLIC_URL%/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="%PUBLIC_URL%/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="%PUBLIC_URL%/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="%PUBLIC_URL%/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Transcribe recordings in Arabic with keyboard shortcuts"
     />
-    <link rel="canonical" href="https://scribear.azurewebsites.net/" />
-    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://scribear.vercel.app/" />
+    <meta name="robots" content="index, follow" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicons/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -47,11 +118,16 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!-- YAMLI CODE START -->
-    <script type="text/javascript" src="https://api.yamli.com/js/yamli_api.js"></script>
+    <script
+      type="text/javascript"
+      src="https://api.yamli.com/js/yamli_api.js"
+    ></script>
     <script type="text/javascript">
-      if (typeof(Yamli) == "object" && Yamli.init( { uiLanguage: "ar" , startMode: "onOrUserDefault" } ))
-      {
-        Yamli.yamlify( "editor_ifr", { settingsPlacement: "bottomLeft" } );
+      if (
+        typeof Yamli == 'object' &&
+        Yamli.init({ uiLanguage: 'ar', startMode: 'onOrUserDefault' })
+      ) {
+        Yamli.yamlify('editor_ifr', { settingsPlacement: 'bottomLeft' });
       }
     </script>
     <!-- YAMLI CODE END -->

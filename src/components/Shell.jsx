@@ -1,11 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import '../App.css';
+import React, { useState, useRef } from 'react';
 import CustomAudioPlayer from './CustomAudioPlayer';
 import CustomVideoPlayer from './CustomVideoPlayer';
 import CustomTextarea from './CustomTextarea';
 import TimerBox from './TimerBox';
-import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
-import { toast } from 'react-toastify';
 import ContactsBox from './ContactsBox';
 import HeaderPage from './HeaderPage';
 import AboutUsPage from './AboutUsPage';

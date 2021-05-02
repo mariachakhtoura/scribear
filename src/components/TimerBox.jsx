@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../App.css';
 import moment from 'moment';
-import { toast } from 'react-toastify';
 
 const TimerBox = () => {
   // test

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css';
+import React, { useEffect } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import { toast } from 'react-toastify';
 

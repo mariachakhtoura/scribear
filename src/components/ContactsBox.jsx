@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css';
+import React, { useState } from 'react';
 
 const ContactsBox = ({ onContactsChange, onContactClick }) => {
   const [inputValue, setInputValue] = useState('');

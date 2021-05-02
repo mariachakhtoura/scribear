@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import ReactPlayer from 'react-player/lazy';
 
 const CustomVideoPlayer = ({ src, transmitVideoPlayerRef, srcPlaying }) => {

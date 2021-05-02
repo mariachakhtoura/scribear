@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef, Fragment } from 'react';
-import '../App.css';
+import React from 'react';
 
 const Footer = () => {
   return (

@@ -640,6 +640,7 @@ footer {
     display: block;
     width: 500px;
     position: relative;
+    text-align: center;
   }
   .keyboard-shortcuts-circle {
     max-width: 325px;
@@ -648,6 +649,12 @@ footer {
     height: 320px;
     background-color: #e890a0;
     margin: 0 auto;
+  }
+  .keyboard-shortcuts-circle-note {
+    margin: 50px auto 0px auto;
+    font-size: 20px;
+    color: #5e5d5d;
+    max-width: 35ch;
   }
   .keyboard-shortcuts {
     flex: 1;

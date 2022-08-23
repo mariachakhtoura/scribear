@@ -89,6 +89,10 @@ const AboutUsPage = () => {
               </div>
             </div>
           </div>
+          <p className="keyboard-shortcuts-circle-note">
+            Note: make sure to enable Fn lock key otherwise key shortcuts will
+            require the key combination Fn+Fkey
+          </p>
         </div>
         <div className="keyboard-shortcuts">
           <h1>Keyboard Shortcuts</h1>
